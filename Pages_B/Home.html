@@ -29,11 +29,20 @@
         </ul>
     </div>
     <div class="MainSection">
-        <div>Charts</div>
-        <div>TimeToggles</div>
+        <div>
+            <button id="State0" class="Selected" onclick="setGraphState(0)">Total Consumption</button>
+            <button id="State1" class="UnSelected" onclick="setGraphState(1)">Per Person Consumption</button>
+            <button id="State2" class="UnSelected" onclick="setGraphState(2)">Solar Panel Yield</button>
+            <button id="State3" class="UnSelected" onclick="setGraphState(3)">Savings Compared to last year</button>
+        </div>
+        <div>
+            <button id="Time3" class="UnSelected" onclick="SetTimeframe(3)">Year</button>
+            <button id="Time2" class="UnSelected" onclick="SetTimeframe(2)">Month</button>
+            <button id="Time1" class="UnSelected" onclick="SetTimeframe(1)">Day</button>
+            <button id="Time0" class="Selected" onclick="SetTimeframe(0)">Hour</button>
+        </div>
         <canvas id="Graph"></canvas>
     </div>
-</div>
 </div>
 </body>
 </html>

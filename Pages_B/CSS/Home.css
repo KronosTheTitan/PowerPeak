@@ -78,6 +78,30 @@
     flex: 6;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #Graph {
-    min-width: 100%
+    min-width: 100%;
+}
+
+Button {
+    background-color: white;
+    border-radius: 16px;
+    border-width: 1px;
+
+    box-shadow: none;
+
+    border-color: lightgrey;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.Selected {
+    background-color: lightgrey;
+}
+
+.UnSelected {
+    background-color: white;
 }
