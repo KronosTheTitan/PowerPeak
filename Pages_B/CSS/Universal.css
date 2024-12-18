@@ -4,7 +4,11 @@ body{
     background-color: lightgrey;
     font: 14px "Roboto", sans-serif;
     font-size: 16pt;
-    margin: 0;
+    margin: 16px;
+
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h1 {
@@ -12,32 +16,10 @@ h1 {
     margin: 0;
 }
 
-.TopBar {
-    background-color: white;
-    padding: 16px;
-    max-height: 20%;
-    display: flex;
-    width: 100%;
-}
-
-.TopBar img {
-    height: 100%;
-}
-
-.TopBar p {
-    float: right;
-    text-align: right;
-}
-
-.Main {
-    display: flex;
-    width: 100%;
-}
-
 .SideBar {
     background-color: white;
     padding: 16px;
-    margin: 16px 16px 16px 16px;
+    margin-right: 16px;
     border-radius: 16px;
     flex: 1;
 }
@@ -71,4 +53,9 @@ li a img {
 a {
     text-decoration: none;
     color: black;
+}
+
+.logo{
+    display: flex;
+    border-bottom: 2px solid lightgray;
 }
