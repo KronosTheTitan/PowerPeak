@@ -1,106 +1,11 @@
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-}
-
-.MainSection{
-    padding: 16px;
-    border-radius: 16px;
-    background: #fff;
-    flex: 6;
-}
-
-body{
-    overflow-x: hidden;
-}
-
-#Graph {
-    min-width: 100%;
-}
-
-Button {
+button {
+    border-color: lightgray;
     background-color: white;
     border-radius: 16px;
-    border-width: 1px;
-
-    box-shadow: none;
-
-    border-color: lightgrey;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 12px;
+    margin-bottom: 8px;
 }
 
-.Selected {
-    background-color: lightgrey;
-}
-
-.UnSelected {
-    background-color: white;
+button:hover {
+    background-color: lightgray;
 }

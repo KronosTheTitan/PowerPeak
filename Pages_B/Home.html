@@ -18,31 +18,33 @@
 </head>
 <body onload="main()">
 <script src="../GraphData.js"></script>
-<div class="SideBar">
-    <div class="logo">
-        <img src="../Icons/PowerPeakLogo.svg"><h1>PowerPeak</h1>
+<div class="Main">
+    <div class="SideBar">
+        <div class="logo">
+            <img src="../Icons/PowerPeakLogo.svg"><h1>PowerPeak</h1>
+        </div>
+        <ul>
+            <li><a href="Home.html"><img src="../Icons/HomeIcon.svg"><p>Home</p></a></li>
+            <li><a href="Device.html"><img src="../Icons/DevicesIcon.svg"><p>Devices</p></a></li>
+            <li><a href="Automation.html"><img src="../Icons/AutomationIcon.svg"><p>Automation</p></a></li>
+            <li><a href="Profile.html"><img src="../Icons/ProfileIcon.svg"><p>Profile</p></a></li>
+        </ul>
     </div>
-    <ul>
-        <li><a href="Home.html"><img src="../Icons/HomeIcon.svg"><p>Home</p></a></li>
-        <li><a href="Device.html"><img src="../Icons/DevicesIcon.svg"><p>Devices</p></a></li>
-        <li><a href="Automation.html"><img src="../Icons/AutomationIcon.svg"><p>Automation</p></a></li>
-        <li><a href="Profile.html"><img src="../Icons/ProfileIcon.svg"><p>Profile</p></a></li>
-    </ul>
-</div>
-<div class="MainSection">
-    <div>
-        <button id="State0" class="Selected" onclick="setGraphState(0)">Total Consumption</button>
-        <button id="State1" class="UnSelected" onclick="setGraphState(1)">Per Person Consumption</button>
-        <button id="State2" class="UnSelected" onclick="setGraphState(2)">Solar Panel Yield</button>
-        <button id="State3" class="UnSelected" onclick="setGraphState(3)">Savings Compared to last year</button>
+    <div class="MainSection">
+        <div>
+            <button id="State0" class="Selected" onclick="setGraphState(0)">Total Consumption</button>
+            <button id="State1" class="UnSelected" onclick="setGraphState(1)">Per Person Consumption</button>
+            <button id="State2" class="UnSelected" onclick="setGraphState(2)">Solar Panel Yield</button>
+            <button id="State3" class="UnSelected" onclick="setGraphState(3)">Savings Compared to last year</button>
+        </div>
+        <div>
+            <button id="Time3" class="UnSelected" onclick="SetTimeframe(3)">Year</button>
+            <button id="Time2" class="UnSelected" onclick="SetTimeframe(2)">Month</button>
+            <button id="Time1" class="UnSelected" onclick="SetTimeframe(1)">Day</button>
+            <button id="Time0" class="Selected" onclick="SetTimeframe(0)">Hour</button>
+        </div>
+        <canvas id="Graph"></canvas>
     </div>
-    <div>
-        <button id="Time3" class="UnSelected" onclick="SetTimeframe(3)">Year</button>
-        <button id="Time2" class="UnSelected" onclick="SetTimeframe(2)">Month</button>
-        <button id="Time1" class="UnSelected" onclick="SetTimeframe(1)">Day</button>
-        <button id="Time0" class="Selected" onclick="SetTimeframe(0)">Hour</button>
-    </div>
-    <canvas id="Graph"></canvas>
 </div>
 </body>
 </html>
